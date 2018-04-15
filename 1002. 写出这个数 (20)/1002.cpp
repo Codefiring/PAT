@@ -6,15 +6,13 @@ using namespace std;
 
 int main()
 {
-	char data;
-	int number[100] = { 0 }, sum = 0;
+	int data = 0;
+	char number[100] , sum = 0;
 	int index = 0;
 	int sum_number[4] = { 0 };
 
-	while (cin>>data)
-	{
-		sum = sum + (int)data;
-	}
+	cin.getline(number, 20);
+
 	for (int i = 0; i < 100; i++)sum = sum + number[i];
 	while (sum) {
 		sum_number[index++] = sum % 10;
