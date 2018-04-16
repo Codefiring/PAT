@@ -7,11 +7,11 @@ using namespace std;
 int main()
 {
 	int data = 0;
-	char number[100] , sum = 0;
+	char number[100] , sum = 0;							
 	int index = 0;
 	int sum_number[4] = { 0 };
 
-	cin.getline(number, 20);
+	while(cin>>number[index++]);			
 
 	for (int i = 0; i < 100; i++)sum = sum + number[i];
 	while (sum) {
