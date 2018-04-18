@@ -6,18 +6,21 @@ using namespace std;
 
 int main()
 {
-	int data = 0;
-	char number[100] , sum = 0;							
-	int index = 0;
-	int sum_number[4] = { 0 };
-
-	while(cin>>number[index++]);			
-
-	for (int i = 0; i < 100; i++)sum = sum + number[i];
-	while (sum) {
-		sum_number[index++] = sum % 10;
-		sum = sum / 10;
+	string s;
+	cin>>s;
+	int sum = 0;
+	for(int i = 0;i<s.length();i++)
+	{
+		sum = sum + (s[i]-'0');
 	}
-	
+	string num = to_string(sum);
+
+	string str[10] = {"ling","yi","er","san","si","wu","liu","qi","ba","jiu"};
+	for(int i = 0;i<num.length();i++)
+	{
+		if(i!=0)
+			cout<<" ";
+		cout<<str[num[i]-'0'];
+	}
 	return 0;
 }
